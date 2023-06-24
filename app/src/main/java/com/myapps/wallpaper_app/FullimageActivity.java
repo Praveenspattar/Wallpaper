@@ -19,7 +19,6 @@ import java.io.IOException;
 public class FullimageActivity extends AppCompatActivity {
 
     private ImageView fullimage;
-    private Button apply;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -28,9 +27,9 @@ public class FullimageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fullimage);
 
         fullimage = findViewById(R.id.fillImage);
-        apply = findViewById(R.id.apply);
+        Button apply = findViewById(R.id.apply);
 
-        Glide.with(this).load(getIntent().getStringExtra("Image")).into(fullimage);
+        Glide.with(this).load(getIntent().getStringExtra("Images")).into(fullimage);
 
         apply.setOnClickListener(new View.OnClickListener() {
             @Override

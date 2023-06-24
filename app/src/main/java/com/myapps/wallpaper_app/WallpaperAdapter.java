@@ -17,8 +17,8 @@ import java.util.ArrayList;
 
 public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.WallpaperViewHolder> {
 
-    private ArrayList<String> list;
-    private Context context;
+    private final ArrayList<String> list;
+    private final Context context;
 
     public WallpaperAdapter(ArrayList<String> list, Context context) {
         this.list = list;
