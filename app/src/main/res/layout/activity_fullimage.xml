@@ -10,11 +10,11 @@
         android:id="@+id/fillImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="centerCrop"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/apply"
@@ -24,8 +24,18 @@
         android:padding="12dp"
         android:text="apply"
         android:textAllCaps="true"
-        app:layout_constraintBottom_toBottomOf="@+id/fillImage"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <ImageButton
+        android:id="@+id/download"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/arrow_down_float"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

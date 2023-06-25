@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Wallpaper_App</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="button"><![CDATA[<-]]></string>
 </resources>
